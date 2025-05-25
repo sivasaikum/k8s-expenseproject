@@ -23,9 +23,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: sivasaikumar943/frontend:2.0.0
+        image: sivasaikumar943/frontend:2.1.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 kind: Service
 apiVersion: v1
@@ -40,5 +40,5 @@ spec:
     project: expense
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 80
+    port: 8080
+    targetPort: 8080
